@@ -3,6 +3,4 @@
 
 
 ## resources:
-
-## todos:
-- [ ] unit test case
++ https://github.com/dankogai/js-base64
