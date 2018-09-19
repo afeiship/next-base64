@@ -1,6 +1,11 @@
 # next-base64
 > Base64 for browerjs
 
+## install:
+```shell
+npm install -S afeiship/next-base64 --registry=https://registry.npm.taobao.org
+```
+
 ## usage:
 ```js
 import NxBase64 from 'next-base64';
