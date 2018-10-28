@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "gulp",
+    "test": "mocha",
     "version": "gulp bump"
   },
   "main": "dist/next-base64.js",

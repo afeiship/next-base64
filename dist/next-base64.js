@@ -2,8 +2,8 @@
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('next-js-core2');
   var base64 = global.base64 || require('base-64');
-  var supportEncode = 'btoa' in window;
-  var supportDecode = 'atob' in window;
+  var supportEncode = 'btoa' in global;
+  var supportDecode = 'atob' in global;
 
   var NxBase64 = nx.declare('nx.Base64', {
     statics: {
