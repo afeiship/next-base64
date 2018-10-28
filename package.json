@@ -1,6 +1,6 @@
 {
   "name": "next-base64",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Base64 for browerjs",
   "homepage": "https://github.com/afeiship/next-base64",
   "author": {
@@ -27,6 +27,7 @@
     "mocha": "^3.5.0"
   },
   "dependencies": {
+    "base-64": "^0.1.0",
     "next-js-core2": "github:afeiship/next-js-core2"
   }
 }
