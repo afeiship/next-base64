@@ -16,5 +16,9 @@ const decode_str = NxBase64.decode(encode_str);
 // afei
 ```
 
+## todos:
+- [ ] Add str b64 solution 
+
 ## resources:
 + https://github.com/dankogai/js-base64
++ http://www.cnblogs.com/linsx/p/9255870.html
