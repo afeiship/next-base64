@@ -1,33 +1,15 @@
 (function() {
   var global = global || this || window || Function('return this')();
   var nx = global.nx || require('next-js-core2');
-  var base64 = global.base64 || require('base-64');
-  var supportEncode = 'btoa' in global;
-  var supportDecode = 'atob' in global;
+  var base64 = global.Base64 || require('js-base64').Base64;
 
   var NxBase64 = nx.declare('nx.Base64', {
     statics: {
-      init: function() {
-        this.encode();
-        this.decode();
+      encode: function(inValue) {
+        return base64.encode(inValue);
       },
-      encode: function() {
-        this.encode = supportEncode
-          ? function(inValue) {
-              return global.btoa(inValue);
-            }
-          : function(inValue) {
-              return base64.encode(inValue);
-            };
-      },
-      decode: function() {
-        this.decode = supportDecode
-          ? function(inValue) {
-              return global.atob(inValue);
-            }
-          : function(inValue) {
-              return base64.decode(inValue);
-            };
+      decode: function(inValue) {
+        return base64.decode(inValue);
       }
     }
   });

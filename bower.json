@@ -1,7 +1,6 @@
 {
   "name": "next-base64",
-  "version": "1.0.0",
-  "description": "Base64 for browerjs",
+  "description": "Base64 for browerjs.",
   "main": "dist/next-base64.js",
   "authors": [
     "afei"
